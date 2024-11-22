@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Quicksand';
-    src: url('Quicksand.ttf') format('ttf'); /* fix paths */
+    src: url('../font/Quicksand.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Overlock';
-    src: url('Overlock-BlackItalic.woff2') format('woff2');
+    src: url('../font/Overlock-BlackItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Overlock';
-    src: url('Overlock-Bold.woff2') format('woff2');
+    src: url('../font/Overlock-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Overlock';
-    src: url('Overlock-Black.woff2') format('woff2');
+    src: url('../font/Overlock-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: 'Overlock';
-    src: url('Overlock-BoldItalic.woff2') format('woff2');
+    src: url('../font/Overlock-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'Overlock';
-    src: url('Overlock-Regular.woff2') format('woff2');
+    src: url('../font/Overlock-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -48,13 +48,86 @@
 
 @font-face {
     font-family: 'Overlock';
-    src: url('Overlock-Italic.woff2') format('woff2');
+    src: url('../font/Overlock-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
+}
+
+:root {
+    --black-text-color: #000000;
+    --white-text-color: #FFFFFF;
+
+    --lm-bg-color: #C9F1FF;
+    --lm-prominent-element-color: #1F4B7D; /* button color, paragraph/description/footer background color */
+    --lm-secondary-element-color: #005070; /* navigation/descripter color, small rectangle color */
+
+    --dm-bg-color: #173659;
+    --dm-prominent-element-color: #4DD2FF; /* button color, paragraph/description/footer background color */
+    --dm-secondary-element-color: #87CEEB; /* navigation color, small rectangle color */
+
+    --primary-color: #00D4FF;
+}
+
+body {
+    background-color: var(--lm-bg-color);
+}
+
+img { width: 100%; height: auto; }
+
+.menu {
+    width: 40px;
+    height: auto;
+    position: fixed;
+    right: 2px;
+    top: 0;
+    border-radius: 5px;
+    background-color: var(--lm-bg-color);
+}
+
+nav {
+    border: 2px solid var(--lm-secondary-element-color);
+    /* make hyperlink white */
+    ul {
+        list-style: none;
+    }
+}
+
+.small-info li {
+    background-color: var(--lm-secondary-element-color);
+    color: var(--white-text-color)
+}
+
+.main li {
+    background-color: var(--lm-prominent-element-color);
+    color: var(--white-text-color);
+}
+
+header a {
+    background-color: var(--lm-secondary-element-color);
+    color: var(--white-text-color)
+}
+
+h2.style {
+    background-color: var(--lm-secondary-element-color);
+    color: var(--white-text-color)
 }
 
 p {
+    background-color: var(--lm-prominent-element-color);
+    color: var(--white-text-color);
     font-family: Quicksand;
-    font-size: 26px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: var(--lm-prominent-element-color);
+    color: var(--white-text-color);
+}
+
+.mail, .linkedin, .github {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+/* get them to center */
 }
