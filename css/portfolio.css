@@ -75,13 +75,18 @@ body {
 
 img { width: 100%; height: auto; }
 
+.reads img, .movies img{
+    width: 50%; height: auto;
+    text-align: center;
+}
+
 .menu {
     width: 40px;
     height: auto;
     position: fixed;
-    right: 2px;
-    top: 0;
-    border-radius: 5px;
+    right: 3px;
+    top: 3px;
+    border-radius: 8px;
     background-color: var(--lm-bg-color);
 }
 
@@ -96,6 +101,10 @@ nav {
 .small-info li {
     background-color: var(--lm-secondary-element-color);
     color: var(--white-text-color)
+}
+
+.main {
+    list-style: none;
 }
 
 .main li {
