@@ -109,7 +109,7 @@ nav {
             display: block;
             font-family: Quicksand;
             font-weight: 600;
-            margin: 10px auto;
+            margin: 30px auto;
             height: 30px;
         }
         a:link {color: var(--black-text-color);}
